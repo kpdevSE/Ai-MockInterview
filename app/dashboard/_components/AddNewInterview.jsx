@@ -71,6 +71,7 @@ export default function AddNewInterview() {
       console.log("Inserted ID", resp);
       if (resp) {
         setOpendialog(false);
+        route.push("/dashboard/initerview/" + resp[0]?.mockId);
       }
     } else {
       console.log("Error");
